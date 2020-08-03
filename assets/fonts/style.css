@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Bold'), local('PT-Root-UI-Bold'),
+        url('PTRootUI-Bold.woff2') format('woff2'),
+        url('PTRootUI-Bold.woff') format('woff'),
+        url('PTRootUI-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

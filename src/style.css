@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'PT Root UI';
+  src: local('PT Root UI Regular'), local('PT-Root-UI-Regular'),
+      url('../assets/fonts/PTRootUI-Regular.woff2') format('woff2'),
+      url('../assets/fonts/PTRootUI-Regular.woff') format('woff'),
+      url('../assets/fonts/PTRootUI-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: local('PT Root UI Bold'), local('PT-Root-UI-Bold'),
+      url('../assets/fonts/PTRootUI-Bold.woff2') format('woff2'),
+      url('../assets/fonts/PTRootUI-Bold.woff') format('woff'),
+      url('../assets/fonts/PTRootUI-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  background-color: #E3E3E3;
+  font-family: "PT Root UI";
+  margin: 0;
+  color: #111111;
+  padding-bottom: 5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #a4a8b8;
+  color: #787c8d;
+}
+a:active {
+  color: #787c8d;
+}
+a:visited {
+  color: #787c8d;
+}
+
+.grey {
+  color: #787c8d
+}
+
+header {
+  margin: 5rem auto 0 auto;
+  width: 800px;
+  font-weight: 400;
+  display: flex
+}
+
+.header-nonpicture {
+  flex-grow: 1;
+  line-height: 21px;
+  margin: 2rem 0;
+}
+
+.questions-button {
+  margin-top: 1rem;
+  background-color: #E3E3E3;
+  border: 2px solid black;
+  padding: 0.625rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+}
+
+.questions-button:focus {
+  outline: none
+}
+
+.questions-button:hover {
+  background-color: #D2D2D2;
+}
+
+.header-picture {
+  margin-top: 2rem;
+  flex-grow: 1
+}
+
+.maincard {
+  width: 560px;
+  margin: 3rem auto 3rem auto;
+}
+
+.cardimage {
+  border-radius: 0.5rem;
+}
+
+.cardinfo {
+  margin-top: -1.875rem;
+  position: relative;
+  z-index: 2;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #fff;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: #a4a8b8;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description {
+  width: 380px;
+}
+
+.helpbutton {
+  background-color: #FFCC47;
+  border: none;
+  margin: 1rem 0 2rem 0;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 5rem;
+  outline: none;
+}
+
+.helpbutton:hover {
+  background-color: #ecb52a;
+}
+
+.toprow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+.number {
+  margin-top: -0.875rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 130%;
+}
+
+.first .number {
+  color: #128648;
+}
+
+.second .number {
+  float: right
+}
+
+.countbar {
+  width: 100%;
+  height: 0.625rem;
+  background-color: #DADADA;
+  border-radius: 1rem;
+}
+
+.greenline {
+  width: 28%;
+  height: 0.625rem;
+  background-color: #128648;
+  border-radius: 1rem;
+}
+
+.cardpersons {
+  background-color: #F4F4F4;
+  margin-top: -1rem;
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.bottomrow {
+  display: flex;
+  font-size: 0.875rem;
+  justify-content: space-between;
+}
+
+.finecounter {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.personslist {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.personitem {
+  display: flex;
+  align-items: center;
+  margin-bottom: -0.75rem;
+}
+
+.personimage {
+  width: auto;
+  height: auto;
+  margin-right: 0.625rem;
+}
+
+.personitem .name {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-right: 0.5rem;
+  border-bottom: 1px solid #c4c7d3;
+}
+
+.count {
+  color: #a4a8b8;
+  border-bottom: 1px solid #c4c7d3;
+}
+
+.done {
+  background: linear-gradient( #128648, #ffffff 30%)
+}
+.done .date {
+  color: #111111
+}
+.done .greenline {
+  width: 100%
+}
+.donetext {
+  color: #128648;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+footer {
+  width: 560px;
+  font-size: 0.875rem;
+  margin: 0 auto;
+}
+.authors {
+  display: flex
+}
+.author {
+  margin-right: 1.75rem;
+}
+
+.author p {
+  margin-bottom: 0rem;
+}
